@@ -1,0 +1,138 @@
+body {
+    /* ... autres styles ... */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: no-repeat center center/cover url('image/neige\ 1.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container {
+    background: transparent;
+    padding: 30px;
+    width: 325px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: drop-shadow(3px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.login-box {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 5px 0 5px;
+}
+
+/* Ajoutez cette déclaration pour supprimer la bordure noire */
+input:focus {
+    outline: none;
+}
+
+button {
+    background-color: #b0e2ff;
+    color: white;
+    padding: 9px 15px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forgot, .sign {
+    color: #b0e2ff;
+    -webkit-text-stroke: 1px #b0e2ff;
+    cursor: pointer;
+}
+.sign {
+    margin-left: 100px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #b0e2ff;
+    -webkit-text-stroke: 1px #b0e2ff;
+}
+
+.snowflake {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    filter: blur(4px);
+    z-index: 1;
+    animation: snowfall linear infinite;
+}
+
+.snowflake-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #fff; /* Couleur du texte */
+}
+
+/* Ajoutez du style supplémentaire selon vos besoins */
+
+h1 {
+  color: transparent;
+  margin-bottom: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #b0e2ff;
+
+}
+
+   

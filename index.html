@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Page de Connexion</title>
+</head>
+<body>
+    <h1> BIENVENUE SUR LA PAGE DE CONNEXION</h1>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Connexion</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" required placeholder="username">
+                </div>
+
+                <div class="input-group">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" required placeholder="password">
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="footer">
+            <p class="forgot">Forgot Password?</p>
+            <p class="sign">Sign up</p>
+        </div>
+    </div>
+
+    <div class="footer">Made by Adam. Copyright @ 2024</div>
+     
+
+<!-- Ajoutez ceci à l'intérieur de la balise body -->
+<div class="snowflake-container">
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <!-- Ajoutez 48 balises .snowflake supplémentaires ici -->
+    <!-- ... -->
+    <div class="snowflake"></div>
+</div>
+<!-- ... Votre code HTML existant ... -->
+
+<!-- ... Votre code HTML existant ... -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const snowflakeContainer = document.querySelector(".snowflake-container");
+
+        for (let i = 1; i <= 50; i++) {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.style.top = `${Math.random() * 100}%`;
+            snowflake.style.left = `${Math.random() * 100}%`;
+            snowflake.style.animationDuration = `${Math.random() * 10 + 5}s`;
+
+            // Réglez la transparence du fond en fonction de la position du flocon
+            const opacity = Math.random(); // Valeur aléatoire entre 0 et 1
+            snowflake.style.background = `rgba(255, 255, 255, ${opacity})`;
+
+            snowflakeContainer.appendChild(snowflake);
+        }
+    });
+</script>
+</body>
+</html>
